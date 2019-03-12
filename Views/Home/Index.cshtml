@@ -1,0 +1,11 @@
+@using SimpleLoginRegistration.Models
+
+@{
+    ViewData["Title"] = "Simple Login/Registration";
+    RegistrationModel newRegistration = new RegistrationModel();
+    LoginModel newLogin = new LoginModel();
+}
+    <div class="card-deck">
+      <partial name="RegistrationPartial" model="newRegistration"/>
+      <partial name="LoginPartial" model="newLogin"/>
+    </div>

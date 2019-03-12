@@ -1,0 +1,23 @@
+@using SimpleLoginRegistration.Models;
+@model LoginModel;
+
+<div class="card border-primary">
+  <h3 class="card-header">LOGIN</h3>
+  <div class="card-body text-secondary">
+    <form action="login" method="POST" novalidate>
+      <div class="form-group">
+        <label asp-for="LoginEmail"></label>
+        <input asp-for="LoginEmail" class="form-control">
+        <span asp-validation-for="LoginEmail" style="font-size:small;"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="LoginPassword"></label>
+        <input asp-for="LoginPassword" class="form-control">
+        <span asp-validation-for="LoginPassword" style="font-size:small;"></span>
+      </div>
+      <footer>
+        <button type="submit" class="btn btn-primary btn-block mt-1">LOG IN</button>
+      </footer>
+    </form>
+  </div>
+</div>
